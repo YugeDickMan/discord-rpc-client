@@ -1,0 +1,22 @@
+{
+  "name": "discord-rpc-client",
+  "version": "1.0.0",
+  "description": "A Discord RPC client with a web UI made in Nuxt.js & Node.js.",
+  "author": "XoAlone",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon backend/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node backend/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "discord-rpc": "^4.0.1",
+    "express": "^4.16.4",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  },
+  "license": "MIT"
+}
