@@ -22,7 +22,8 @@ You're good to go! Check below to see how to set up the RPC.
 3. Paste it in the "Client ID" input
 4. Change the details and state to what you would like (optional)
 5. Change large/small image key and text (optional)
-6. Click "Start RPC" to start the RPC & click "Stop RPC" to stop the RPC
+6. Change the buttons to what you would like (optional)
+7. Click "Start RPC" to start the RPC & click "Stop RPC" to stop the RPC
 ```
 
 ## RPC Illustration:
