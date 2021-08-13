@@ -24,6 +24,18 @@ function errorRes(res, error) {
 
 Router.post("/change-rpc-status", json(), async (req, res) => {
   const RPCDetails = req.body;
+  RPCDetails.buttons = [];
+  if (RPCDetails.label1 && RPCDetails.url1)
+    RPCDetails.buttons.push({
+      label: RPCDetails.label1,
+      url: RPCDetails.url1
+    });
+  if (RPCDetails.label2 && RPCDetails.url2)
+    RPCDetails.buttons.push({
+      label: RPCDetails.label2,
+      url: RPCDetails.url2
+    });
+  if (RPCDetails.buttons.length === 0) delete RPCDetails.buttons;
   try {
     await client.login({
       clientId: RPCDetails.clientId
