@@ -1,4 +1,5 @@
 # Discord RPC Client
+This only works on PC!
 
 ## Prerequisite:
 - [x] Have Node.js installed
